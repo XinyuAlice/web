@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import HeroImg from '../images/hero.jpg';
 import Button from './Button';
 import PText from './PText';
+import SocialMediaArrow from '../images/social-media-arrow.svg';
+import ScrollDownArrow from '../images/scroll-down-arrow.svg';
 const HeroStyles = styled.div`
   .hero {
     height: 100vh;
@@ -153,14 +155,14 @@ export default function HeroSection() {
         </div>
         <div className="hero__info">
           <PText>
-            Junior Developer with a Bachelor of Computer Science (with First Class Honours & Co-op) degree with a minor in Mathematics and a certificate in Communications Technologies & Cyber Security. I have Co-op experience with the Government of Nova Scotia Department of Labor and advanced education as an IT summer student to provide data as requested by clients. I have Co-op experience with front-end work for designing and implementing web-based applications. I just finished a half-year research project with Dr. Israat Haque in analyzing the most effective attack in RPL protocol and providing a mitigation solution in grid topology using automation testing with Python, C, and shell scripting.
+            Junior Developer
           </PText>
-          <Button />
+          <Button btnText="see my works" btnLink="/projects" />
         </div>
         <div className="hero__social">
           <div className="hero__social__indicator">
             <p>Follow</p>
-
+            <img src={SocialMediaArrow} alt="icon" />
           </div>
           <div className="hero__social__text">
             <ul>
@@ -201,6 +203,10 @@ export default function HeroSection() {
                 </a>
               </li>
             </ul>
+          </div>
+          <div className="hero__scrollDown">
+            <p>Scroll</p>
+            <img src={ScrollDownArrow} alt="ScrollDown Arrow" />
           </div>
         </div>
       </div>
